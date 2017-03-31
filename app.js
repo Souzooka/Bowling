@@ -17,11 +17,6 @@ function bowling(arr) {
       strikesArr.push(throws);
     }
 
-    if (i > 0) {
-      console.log(sumArr[i-1]);
-    }
-
-
     for (let score in arr[i]) {
       ++throws;
       sumArr[i] += arr[i][score];
@@ -45,7 +40,7 @@ function bowling(arr) {
   for (let i = 0; i < sumArr.length; i++) {
     sum += sumArr[i];
   }
-  console.log(strikesArr)
+
   return sum;
 
 }

@@ -34,6 +34,13 @@ describe('Bowling Throw Simulator', () => {
                     {throw1: 2, throw2: 3}, {throw1: 0, throw2: 0},
                     {throw1: 0, throw2: 0}, {throw1: 0}] ))
                     .to.be.equal(72);
+
+    expect(bowling( [{throw1: 10}, {throw1: 10},
+                    {throw1: 10}, {throw1: 10},
+                    {throw1: 10}, {throw1: 10},
+                    {throw1: 10}, {throw1: 10},
+                    {throw1: 10}, {throw1: 10, throw2: 10, throw3: 10},] ))
+                    .to.be.equal(300);
   });
 
 });
