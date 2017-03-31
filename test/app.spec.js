@@ -14,8 +14,17 @@ describe('Bowling Throw Simulator', () => {
                     {throw1: 2, throw2: 1}, {throw1: 1, throw2: 0},
                     {throw1: 2, throw2: 3}, {throw1: 2, throw2: 3},
                     {throw1: 2, throw2: 3}, {throw1: 2, throw2: 3},
-                    {throw1: 2, throw2: 3}, {throw1: 2, throw2: 3}] ))
-                    .to.be.equal(50);
+                    {throw1: 2, throw2: 3}, {throw1: 2}] ))
+                    .to.be.equal(47);
+  });
+
+  it('should return a valid score for a game containing spares', () => {
+    expect(bowling( [{throw1: 6, throw2: 4}, {throw1: 5, throw2: 5},
+                    {throw1: 2, throw2: 1}, {throw1: 1, throw2: 0},
+                    {throw1: 2, throw2: 3}, {throw1: 2, throw2: 3},
+                    {throw1: 2, throw2: 3}, {throw1: 2, throw2: 3},
+                    {throw1: 2, throw2: 3}, {throw1: 2}] ))
+                    .to.be.equal(56);
   });
 
 });
