@@ -19,12 +19,21 @@ describe('Bowling Throw Simulator', () => {
   });
 
   it('should return a valid score for a game containing spares', () => {
-    expect(bowling( [{throw1: 6, throw2: 4}, {throw1: 5, throw2: 5},
-                    {throw1: 2, throw2: 1}, {throw1: 1, throw2: 0},
-                    {throw1: 2, throw2: 3}, {throw1: 2, throw2: 3},
-                    {throw1: 2, throw2: 3}, {throw1: 2, throw2: 3},
-                    {throw1: 2, throw2: 3}, {throw1: 2}] ))
-                    .to.be.equal(56);
+    expect(bowling( [{throw1: 0, throw2: 0}, {throw1: 0, throw2: 0},
+                    {throw1: 6, throw2: 4}, {throw1: 5, throw2: 6},
+                    {throw1: 0, throw2: 0}, {throw1: 0, throw2: 0},
+                    {throw1: 0, throw2: 0}, {throw1: 0, throw2: 0},
+                    {throw1: 0, throw2: 0}, {throw1: 0}] ))
+                    .to.be.equal(26);
+  });
+
+  it('should return a valid score for a game containing strikes', () => {
+    expect(bowling( [{throw1: 10}, {throw1: 5, throw2: 5},
+                    {throw1: 10}, {throw1: 1, throw2: 0},
+                    {throw1: 0, throw2: 0}, {throw1: 10},
+                    {throw1: 2, throw2: 3}, {throw1: 0, throw2: 0},
+                    {throw1: 0, throw2: 0}, {throw1: 0}] ))
+                    .to.be.equal(72);
   });
 
 });
