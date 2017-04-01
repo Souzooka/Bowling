@@ -31,10 +31,7 @@ function bowling(arr) {
           sumArr[i] += arr[i][score];
         }
       }
-
     }
-
-
   }
 
   for (let i = 0; i < sumArr.length; i++) {
@@ -42,7 +39,6 @@ function bowling(arr) {
   }
 
   return sum;
-
 }
 
 module.exports = bowling;
