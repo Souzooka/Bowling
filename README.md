@@ -1,3 +1,5 @@
+![Travis](https://travis-ci.org/Souzooka/Bowling.svg?branch=master)
+
 # Bowling Score Calculator
 Your task is to write a function for calculating the score of a 10 pin bowling game. The input for this function will be **an array of objects**, and each object represents one frame. The objects can have any properties and values you see fit. Figuring out your input's data structure is part of the challenge.
 
